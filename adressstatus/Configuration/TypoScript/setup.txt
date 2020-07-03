@@ -1,0 +1,20 @@
+plugin.tx_onetimeaccount_pi1 {
+  # location of the HTML template file
+  templateFile = EXT:adressstatus/Resources/Private/Templates/onetimeaccount_adressstatus_pi1.html
+
+  form.elements.adressstatus= renderlet:RADIOBUTTON
+  form.elements.adressstatus {
+    name = adressstatus
+    label = LLL:EXT:adressstatus/locallang_db.xml:fe_users.adressstatus
+    data.items {
+      10.caption = LLL:EXT:adressstatus/locallang_db.xml:fe_users.adressstatus.I.1
+      10.value = Privatadresse
+    }
+    data.items {
+      20.caption = LLL:EXT:adressstatus/locallang_db.xml:fe_users.adressstatus.I.2
+      20.value = Firmenanschrift
+    }
+    validators.10 = validator:STANDARD
+    validators.10.required.message = Bitte anklicken ob Privat- oder Firmenanschrift
+  }
+}
