@@ -1,2 +1,3 @@
 # TYPO3-onetimeaccount-adressstatus
-additional radio buttons to classify an address as private or business
+Additional radio buttons for "onetimeaccount/seminars" to classify an address as private or business. Based on extension marijo.
+This Extension has a bug. Please don't use it.
